@@ -1,0 +1,58 @@
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+img {
+    border-radius: 50%;
+    height: 100px;
+    margin: 12px;
+}
+
+header {
+    margin-left: 100px;
+}
+
+.overlay {
+    position: abosule;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(98, 98, 98, .5);
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 28%);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+p, h2 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}

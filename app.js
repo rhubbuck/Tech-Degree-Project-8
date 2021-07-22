@@ -55,8 +55,6 @@ function displayModal(index) {
         <p class='phone'>${phone}</p>
         <p class='address'>${street}, ${state} ${postcode}</p>
         <p class='birthday'>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
-    </div>
-    <div class ="button-box">
         <button class="modal-nav" id="prev">&#8592</button>
         <button class="modal-nav" id="next">&#8594</button>
     </div>
@@ -109,7 +107,7 @@ const searchFunction = (search) => {
     nameBoxes.forEach((nameBox) => {
         let nameText = nameBox.textContent.toLowerCase();
         let card = nameBox.parentElement.parentElement;
-        
+
         if (nameText.includes(searchLetters)) {
             card.style.display = 'flex'; 
         } else {
